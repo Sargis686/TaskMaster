@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
+/* src/App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+background-color: #373877;
+  /* justify-content: space-around; */
+
+}
+
+.title{
   color: white;
+  font-weight: bold;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
+.task-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 95%;
+  
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* App.css */
+   .todo-stats {
+  display: flex;
+  /* justify-content: flex-end; */
+
+  position: relative;
+  top: 40px;
+  left: 50px;
+  gap: 20px;
+  font-weight: bold;
+  /* margin-bottom: 40px; */
+  /* padding-right: 15px; */
+}
+
+.todo-stats span {
+  color: #333;
+}
+
+.todo-stats span:nth-child(1) {
+  color: green;
+}
+
+.todo-stats span:nth-child(2) {
+  color: red;
 }

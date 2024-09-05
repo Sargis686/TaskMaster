@@ -1,0 +1,36 @@
+/* TodoItem.css */
+
+.todo-item {
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.todo-item.important span {
+    color: red;
+    font-weight: bold;
+}
+
+.todo-item.done span {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.buttons {
+    display: flex;
+}
+
+.edit-button,
+.important-button,
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
